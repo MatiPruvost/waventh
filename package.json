@@ -1,0 +1,16 @@
+{
+  "name": "waventh",
+  "version": "0.0.0",
+  "description": "Creates image with random colors and post to twitter account",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matías Pruvost",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^1.2.1",
+    "node-twitter-api": "^1.5.0",
+    "twit": "^1.1.20"
+  }
+}
