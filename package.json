@@ -8,7 +8,7 @@
   "dependencies": {
     "canvas": "^1.2.1",
     "cron": "^1.0.9",
-    "node-twitter-api": "^1.5.0",
+    "onecolor": "^2.5.0",
     "twit": "^1.1.20"
   }
 }

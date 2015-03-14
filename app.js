@@ -11,3 +11,5 @@ var job = new CronJob({
   },
 });
 job.start();
+
+twitt.create();
