@@ -24,3 +24,10 @@ function image (callback){
   return [canvas.toBuffer().toString('base64'), rgb]
 };
 module.exports.image = image;
+
+var main = function(){
+  console.log(image());
+}
+if (require.main === module) {
+  main();
+}

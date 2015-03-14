@@ -23,3 +23,10 @@ create = function(){
   });
 };
 module.exports.create = create;
+
+var main = function(){
+  create();
+}
+if (require.main === module) {
+  main();
+}
