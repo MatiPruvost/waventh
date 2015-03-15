@@ -5,7 +5,7 @@ var config = require('./config').image_size;
 var logs = require('./logs');
 
 colorsLogs.setTheme({
-  initializing: logs.initializing,
+  subInitializing: logs.subInitializing,
   clog: logs.clog
 });
 
@@ -20,7 +20,7 @@ function colors (n,low, high) {
   return color_list
 };
 function image (callback){
-  console.log('   Creating new image'.initializing);
+  console.log('    Creating new image'.subInitializing);
   var Image = Canvas.Image;
   var canvas = new Canvas(config.width, config.height);
   var ctx = canvas.getContext('2d');
@@ -29,7 +29,7 @@ function image (callback){
   ctx.fillStyle = rgb     
   ctx.fillRect(0,0,config.width, config.height);                 
   ctx.save();
-  console.log('   Created new image'.clog);
+  console.log('    Created new image'.clog);
   return [canvas.toBuffer().toString('base64'), rgb]
 };
 module.exports.image = image;

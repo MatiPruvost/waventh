@@ -1,5 +1,6 @@
 {
-  "initializing": "green",
+  "initializing":"inverse",
+  "subInitializing": "green",
   "clog": "white",
   "data": "white",
   "help": "cyan",
