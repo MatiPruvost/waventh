@@ -1,10 +1,20 @@
 var util = require('util');
+var colorsLogs = require('colors');
 var color = require('onecolor');
+var logs = require('./logs');
+
+colorsLogs.setTheme({
+  initializing: logs.initializing,
+  clog: logs.clog
+});
 
 convert = function(rgb_color){
+	console.log('  Converting colors'.initializing);
+	console.log('    Colors '.clog, rgb_color);
 	var rgb = color(rgb_color);
 	var hex = rgb.hex();
 	var css = rgb.css();
+	console.log('  Converted colors'.clog);
 	return util.format('#color \n%s \n%s', hex, css);
 };
 module.exports.convert = convert;
