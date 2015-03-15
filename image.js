@@ -1,6 +1,13 @@
 var util = require('util');
 var Canvas = require('canvas');
+var colorsLogs = require('colors');
 var config = require('./config').image_size;
+var logs = require('./logs');
+
+colorsLogs.setTheme({
+  subInitializing: logs.subInitializing,
+  clog: logs.clog
+});
 
 function randomIntInc (low, high) {
   return Math.floor(Math.random() * (high - low + 1) + low);
@@ -13,6 +20,7 @@ function colors (n,low, high) {
   return color_list
 };
 function image (callback){
+  console.log('    Creating new image'.subInitializing);
   var Image = Canvas.Image;
   var canvas = new Canvas(config.width, config.height);
   var ctx = canvas.getContext('2d');
@@ -21,6 +29,7 @@ function image (callback){
   ctx.fillStyle = rgb     
   ctx.fillRect(0,0,config.width, config.height);                 
   ctx.save();
+  console.log('    Created new image'.clog);
   return [canvas.toBuffer().toString('base64'), rgb]
 };
 module.exports.image = image;

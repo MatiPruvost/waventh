@@ -1,0 +1,10 @@
+{
+  "initializing":"inverse",
+  "subInitializing": "green",
+  "clog": "white",
+  "data": "white",
+  "help": "cyan",
+  "warn": "yellow",
+  "debug": "blue",
+  "error": "red"
+}
