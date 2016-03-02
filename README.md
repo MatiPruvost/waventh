@@ -4,29 +4,28 @@ Waventh lets upload a tweet with a random color image.
 
 ##Pre-requisites  
 Software:  
-git  
-node  
-npm  
-grunt  
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
+- [node](https://nodejs.org/en/download/)  
+- [grunt](http://gruntjs.com/getting-started)  
 
 Twitter:  
-Twitter account. [Creating an account](https://support.twitter.com/articles/100990-signing-up-with-twitter)  
-Twitter application. [Creating an application](https://apps.twitter.com/app/new)  
+- Twitter account. [Creating an account](https://support.twitter.com/articles/100990-signing-up-with-twitter)  
+- Twitter application. [Creating an application](https://apps.twitter.com/app/new)  
 
 ## Getting started  
 Clone repository:  
-`$git clone https://github.com/MatiPruvost/waventh.git  `
+`$ git clone https://github.com/MatiPruvost/waventh.git  `
 
 Install dependencies:  
-`$npm install  `
+`$ npm install  `
 
 Create config fle:  
-`$grunt file-creator  `
+`$ grunt file-creator  `
 
 Update config file:  
-Add consummer keys and tokens.  
-Config image size (Default 200x200 px).  
-Config cron job (Default each a hour).  
+- Add consummer keys and tokens.  
+- Config image size (Default 200x200 px).  
+- Config cron job (Default each a hour).  
 
 ## Run waventh:  
 Upload one tweet:  
